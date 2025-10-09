@@ -54,8 +54,7 @@ fn run_bf(code: &str) {
 }
 
 fn main() {
-    let code = fs::read_to_string("/home/lyubomir/Documents/rust/bf_interpreter/benchmark.bf")
-        .expect("sex");
+    let code = fs::read_to_string("./benchmark.bf").expect("murzi me da praq error handling");
     let optimization_time = Instant::now();
     run_bf(&code);
     let duration = optimization_time.elapsed();
